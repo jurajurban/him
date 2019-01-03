@@ -1,32 +1,57 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(75, 101, 132,1.0);
+}
+
+.header h1 {
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: rgba(254, 211, 48,1.0);
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.header h2 {
+  color: rgba(254, 211, 48,0.7);
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+}
+
+.pageContent {
+  padding: 20px;
+  display: flex;
+}
+
+.header-search-field {
+  background-color: #6573c3;
+  border-radius: 4px;
+  padding: 5px 20px 2px;
+}
+
+.header-search-field input {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.qr-code-div {
+  display: none;
+  flex-direction: row;
+  border: 2px solid #333333;
+  padding: 10px;
+  width: 350px;
+  height: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.qr-code-div div {
+  width: 50%;
 }
+
